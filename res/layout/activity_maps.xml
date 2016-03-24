@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    
+tools:context=".MainActivity"
+    android:padding="0dp">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_above="@+id/latlongLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="170dp"
+        android:layout_below="@+id/latlongLocation" />
+
+<TextView
+    android:id="@+id/latlongLocation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:background="#ff058fff"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:textColor="#ffffffff"
+    android:paddingLeft="500dp"
+    android:paddingRight="500dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fuppy"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog"
+        android:id="@+id/btn_dog"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat"
+        android:id="@+id/btn_cat"
+        android:layout_alignTop="@+id/btn_dog"
+        android:layout_toRightOf="@+id/imageView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small"
+        android:id="@+id/btn_small"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:padding="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:id="@+id/btn_medium"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small"
+        android:layout_toEndOf="@+id/btn_small" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        android:id="@+id/btn_large"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_medium"
+        android:layout_toEndOf="@+id/btn_medium" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X-Large"
+        android:id="@+id/btn_xlarge"
+        android:layout_alignTop="@+id/btn_medium"
+        android:layout_toEndOf="@+id/btn_large"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/btn_large"
+        android:layout_toRightOf="@+id/btn_large" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City,zip,address"
+        android:textAlignment="center"
+        android:layout_below="@+id/latlongLocation"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/btn_cat"
+        android:layout_alignEnd="@+id/btn_cat"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:labelFor="Text"
+    android:id="@+id/shsh">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/TopImage"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
+
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:text="Call"
+        android:id="@+id/imageButton"
+        android:src="@drawable/NewText"
+        android:clickable="true"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toRightOf="@+id/view"
+        android:layout_toEndOf="@+id/view">
+        </ImageButton>
+
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/NewCall"
+        android:clickable="true"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="150dp"
+        android:fontFamily="700px"
+        android:text="is waiting for you. Please arrange a pickup within - hours"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textAlignment="center"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="77dp" />
+
+    <ImageButton
+        android:layout_width="245dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/EnterAppoinment"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+
+</RelativeLayout>

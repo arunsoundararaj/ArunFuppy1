@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fuppy</string>
+    <string name="title_activity_maps">Fuppy</string>
+    <string name="permission_location_rationale">Device location permission is needed to demonstrate access.</string>
+    <string name="ok">OK</string>
+</resources>

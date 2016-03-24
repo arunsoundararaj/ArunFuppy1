@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    
+tools:context=".MainActivity"
+    android:padding="0dp">
+
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:layout_marginLeft="2dp"
+        android:text="1"
+        android:id="@+id/btn_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="2"
+        android:id="@+id/btn_small1"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small"
+        android:layout_toEndOf="@+id/btn_small" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="3"
+        android:id="@+id/btn_small2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small1"
+        android:layout_toEndOf="@+id/btn_small1" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="4"
+        android:id="@+id/btn_small3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small2"
+        android:layout_toEndOf="@+id/btn_small2" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="5"
+        android:id="@+id/btn_small4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small3"
+        android:layout_toEndOf="@+id/btn_small3" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="6"
+        android:id="@+id/btn_small5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small4"
+        android:layout_toEndOf="@+id/btn_small4" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="7"
+        android:id="@+id/btn_small6"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small5"
+        android:layout_toEndOf="@+id/btn_small5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES!"
+        android:id="@+id/review"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_small"
+        android:layout_below="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No:make available for foster"
+        android:id="@+id/pic_video"
+        android:layout_below="@+id/review"
+        android:layout_alignEnd="@+id/review"
+        android:layout_alignStart="@+id/review" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No: return to shelter immediately"
+        android:id="@+id/foster_faq"
+        android:layout_below="@+id/pic_video"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/pic_video" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="700px"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/text_size"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="WOW! That was fast! You have fostered -- for 7 days. Would you like to be his permanent home? "
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/review"
+        android:layout_alignEnd="@+id/review" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/btn_small"
+        android:layout_alignEnd="@+id/contact_seller"
+        android:src="@drawable/dummy_dog"
+        android:layout_alignStart="@+id/pic_video"
+        android:layout_below="@+id/foster_faq" />
+
+
+</RelativeLayout>
