@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    
+tools:context=".MainActivity"
+    android:padding="0dp">
+
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:layout_marginLeft="2dp"
+        android:text="1"
+        android:id="@+id/btn_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="2"
+        android:id="@+id/btn_small1"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small"
+        android:layout_toEndOf="@+id/btn_small" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="3"
+        android:id="@+id/btn_small2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small1"
+        android:layout_toEndOf="@+id/btn_small1" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="4"
+        android:id="@+id/btn_small3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small2"
+        android:layout_toEndOf="@+id/btn_small2" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="5"
+        android:id="@+id/btn_small4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small3"
+        android:layout_toEndOf="@+id/btn_small3" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="6"
+        android:id="@+id/btn_small5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small4"
+        android:layout_toEndOf="@+id/btn_small4" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:textColor="@drawable/text_selector"
+        android:text="7"
+        android:id="@+id/btn_small6"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_small5"
+        android:layout_toEndOf="@+id/btn_small5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Review of --"
+        android:id="@+id/review"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_small"
+        android:layout_below="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Pic/Video of --"
+        android:id="@+id/pic_video"
+        android:layout_below="@+id/review"
+        android:layout_alignEnd="@+id/review"
+        android:layout_alignStart="@+id/review" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foster FAQ&apos;s"
+        android:id="@+id/foster_faq"
+        android:layout_below="@+id/pic_video"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/pic_video" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Fuppy"
+        android:id="@+id/contact_fuppy"
+        android:layout_below="@+id/foster_faq"
+        android:layout_alignStart="@+id/pic_video"
+        android:layout_toStartOf="@+id/btn_small3"
+        android:width="@dimen/abc_dialog_padding_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Seller"
+        android:id="@+id/contact_seller"
+        android:layout_alignEnd="@+id/pic_video"
+        android:layout_alignBottom="@+id/contact_fuppy"
+        android:layout_toEndOf="@+id/btn_small2"
+        android:layout_below="@+id/foster_faq" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="700px"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Thank you. Please enjoy your 7 day foster period with --"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/review"
+        android:layout_alignEnd="@+id/review" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/contact_fuppy"
+        android:layout_alignStart="@+id/contact_fuppy"
+        android:layout_above="@+id/btn_small"
+        android:layout_alignEnd="@+id/contact_seller"
+        android:src="@drawable/dummy_dog" />
+
+
+</RelativeLayout>
